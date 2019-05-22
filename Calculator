@@ -1,0 +1,50 @@
+// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	//Simple calculator
+	x://goto label
+	int a, b;
+	char c;
+	cout << "Enter first Number" << endl;
+	cin >> a;
+	cout << "Enter second Number" << endl;
+	cin >> b;
+	cout << "Enter operation to perform " << endl;
+	cout << "+ to add " << endl;
+	cout << "- to sub " << endl;
+	cout << "* to mul " << endl;
+	cout << "+ to div " << endl;
+	cin >> c;
+
+	if (c == '+')//To perform addition
+	{
+		
+		cout << "Sum of two numbers are" << a+b <<endl;
+	}
+	else if (c == '-')//To perform subtraction
+	{
+		
+		cout << "Result of subtraction of two numbers are" <<a-b<< endl;
+	}
+	else if (c == '*')//To perform multiplication
+	{
+		
+		cout << "Result of multipilication of two numbers are" <<a*b<<endl;
+	}
+	else if (c == '/')//To perform division
+	{
+		
+		cout << "Result of Division of two numbers are" <<a/b<< endl;
+	}
+	else
+	{
+		goto x;//goto label
+	}
+}
+
